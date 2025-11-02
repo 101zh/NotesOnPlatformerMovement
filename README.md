@@ -57,7 +57,7 @@ The jump curve (adjust this for different kinds of jump feel)
 - fast fall (makes jumps feel less floaty)
   - ![fast falling](images/jumps/fastfall.png)
 
-- You can also make the jump floaty by decreasing the acceleration after reaching the peak of a jump
+- You can also make the jump floaty by decreasing the gravity after reaching the peak of a jump
   - (Didn't feel like finding an image for this one)
 
 - Varying heights - Allow the player to control the heights of jumps based on how long they hold the space bar
@@ -88,6 +88,7 @@ Different methods of camera movement
 
 - Edge Corner Correction
   - Same idea as ceiling correction, but instead do it horizontally for platforms.
+  - (This is a less common mechanic tho)
   - ![alt text](images/assists/edgeCornerCorrection.gif)
 
 - Max X and/or Y velocity - makes it so the player will never go too fast
