@@ -2,9 +2,13 @@
 
 All these are things to keep in mind. These are things to adjust per-game and **NOT** something you have to do. Especially for Movement, Jumps, and "Juice" sections
 
-"The movement in a platformer feels natural, but behind the scenes, it’s anything but."
+Please check out [TL;DR](#tldr), and [Resources Used](#resources-used)
+
+Note: Platforming isn't just movement; **level design matters** too
 
 ## Design Principles
+
+"The movement in a platformer feels natural, but behind the scenes, it’s anything but."
 
 - Make the platforming feel "natural"
 - Make the player feel in control of the movement
@@ -53,10 +57,12 @@ The jump curve (adjust this for different kinds of jump feel)
 - fast fall (makes jumps feel less floaty)
   - ![fast falling](images/jumps/fastfall.png)
 
-- you can also make the jump floaty by decreasing the acceleration after reaching the peak of a jump
-  - (didn't feel like finding an image for this one)
+- You can also make the jump floaty by decreasing the acceleration after reaching the peak of a jump
+  - (Didn't feel like finding an image for this one)
 
-- Varying heights for jumps can allow player to feel that they can control the height they fall.
+- Varying heights - Allow the player to control the heights of jumps based on how long they hold the space bar
+
+- Having a different air acceleration than when on the ground - could add to realism, but can also hurt...
 
 ## Camera
 
@@ -71,20 +77,20 @@ Different methods of camera movement
 ## Assists - "Cheating" for the player
 
 - Coyote Time
-  - Give the player an extra time window to jump even if they are no longer touching the ground
+  - Give the player an extra time window to jump even if they are no longer touching the ground.
   - ![alt text](images/assists/coyoteTime.gif)
 
 - Jump Buffering - If you press and hold the jump button a short time before landing, you will jump on the exact frame that you land.
 
 - Ceiling Corner Correction
-  - If jumping into the corner of a ceiling, nudge player left or right
+  - If jumping into the corner of a ceiling, nudge the player so they will clear the ceiling.
   - ![alt text](images/assists/ceilingCornerCorrection.gif)
 
 - Edge Corner Correction
   - Same idea as ceiling correction, but instead do it horizontally for platforms.
   - ![alt text](images/assists/edgeCornerCorrection.gif)
 
-- Having a max X or Y velocity makes it so the player will never go too fast
+- Max X and/or Y velocity - makes it so the player will never go too fast
 
 ## "Juice" - The "impact" of movement
 
@@ -92,10 +98,14 @@ Different methods of camera movement
 - Sounds - when running, landing, or jumping
 - Animations - when running, landing or jumping
 - Stretching the character in the direction they are moving
-- Slightly tilting character when they run
-- Afterimage of the character if they move *super* fast
+- Slightly tilting character towards the direction they run
+- Having an afterimage of the character if they move *super* fast
 
-Don't over do it, but can really make the player feel like they are actually moving a real character
+Don't overdo it, but these things can really make the movement feel real.
+
+## Platformers are more than just movement
+
+Level design is also crucial, but won't be talked about here.
 
 ## TL;DR
 
@@ -104,3 +114,9 @@ To make a good platformer...
 - Make the movement feel natural
 - Be forgiving to the player
 
+## Resources Used
+
+- [Platformer's Toolkit](https://gmtk.itch.io/platformer-toolkit)
+- [Why Does Celeste Feel So Good to Play?](https://www.youtube.com/watch?v=yorTG9at90g)
+- [Math for Game Programmers: Building a Better Jump](https://www.youtube.com/watch?v=hG9SzQxaCm8)
+- \+ Many More
